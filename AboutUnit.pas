@@ -52,7 +52,7 @@ end;
 
 procedure TAboutForm.MailToLabelClick(Sender: TObject);
 begin
-   OpenDocument('mailto:tuomas.suutari@naantali.fi'); { *Converted from ShellExecute* }
+   OpenDocument('mailto:tuomas.suutari@naantali.fi');
 end;
 
 end.
