@@ -6,7 +6,7 @@ interface
 
 uses
   LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  ExtCtrls, StdCtrls, ComCtrls;
+  ExtCtrls, StdCtrls, ComCtrls, variants;
 
 type
   TNonVisualObjects = class(TDataModule)

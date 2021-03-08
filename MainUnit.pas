@@ -89,7 +89,7 @@ var
 
 implementation
 
-uses AboutUnit, Top12Unit, AskNameUnit;
+uses AboutUnit, Top12Unit, AskNameUnit, variants;
 
 {$R *.lfm}
 
