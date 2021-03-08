@@ -1,55 +1,58 @@
 object Top12Form: TTop12Form
   Left = 713
-  Top = 554
+  Height = 296
+  Top = 504
+  Width = 233
   BorderStyle = bsDialog
   Caption = 'TOP 12'
-  ClientHeight = 249
+  ClientHeight = 296
   ClientWidth = 233
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
-  Font.Style = []
   OnShow = FormShow
-  PixelsPerInch = 96
+  LCLVersion = '2.0.6.0'
   object HighScoreCloseButton: TButton
     Left = 72
-    Top = 216
-    Width = 89
     Height = 32
+    Top = 256
+    Width = 89
     Caption = 'Sulje'
-    TabOrder = 0
     OnClick = HighScoreCloseButtonClick
+    TabOrder = 0
   end
   object ScorePageControl: TPageControl
     Left = 8
+    Height = 240
     Top = 8
     Width = 217
-    Height = 201
     ActivePage = NGameTabSheet
+    TabIndex = 0
     TabOrder = 1
     object NGameTabSheet: TTabSheet
       Caption = 'Normaali peli'
+      ClientHeight = 208
+      ClientWidth = 213
       object NGameNamesMemo: TMemo
+        Cursor = crArrow
         Left = 32
+        Height = 192
         Top = 8
         Width = 137
-        Height = 161
-        Cursor = crArrow
-        TabStop = False
         BorderStyle = bsNone
         Color = clBtnFace
         ReadOnly = True
         TabOrder = 0
+        TabStop = False
         WantReturns = False
         WordWrap = False
       end
       object NGameRankMemo: TMemo
+        Cursor = crArrow
         Left = 8
+        Height = 192
         Top = 8
         Width = 17
-        Height = 161
-        Cursor = crArrow
-        TabStop = False
         Alignment = taRightJustify
         BorderStyle = bsNone
         Color = clBtnFace
@@ -69,34 +72,36 @@ object Top12Form: TTop12Form
         )
         ReadOnly = True
         TabOrder = 1
+        TabStop = False
         WantReturns = False
         WordWrap = False
       end
       object NGameScoresMemo: TMemo
+        Cursor = crArrow
         Left = 176
+        Height = 192
         Top = 8
         Width = 25
-        Height = 161
-        Cursor = crArrow
-        TabStop = False
         Alignment = taRightJustify
         BorderStyle = bsNone
         Color = clBtnFace
         ReadOnly = True
         TabOrder = 2
+        TabStop = False
         WantReturns = False
         WordWrap = False
       end
     end
     object RAGameTabSheet: TTabSheet
       Caption = 'Sekavasti kiihtyvä peli'
+      ClientHeight = 208
+      ClientWidth = 213
       object RAGameRankMemo: TMemo
+        Cursor = crArrow
         Left = 8
+        Height = 193
         Top = 8
         Width = 17
-        Height = 161
-        Cursor = crArrow
-        TabStop = False
         Alignment = taRightJustify
         BorderStyle = bsNone
         Color = clBtnFace
@@ -116,35 +121,36 @@ object Top12Form: TTop12Form
         )
         ReadOnly = True
         TabOrder = 0
+        TabStop = False
         WantReturns = False
         WordWrap = False
       end
       object RAGameNamesMemo: TMemo
+        Cursor = crArrow
         Left = 32
+        Height = 193
         Top = 8
         Width = 137
-        Height = 161
-        Cursor = crArrow
-        TabStop = False
         BorderStyle = bsNone
         Color = clBtnFace
         ReadOnly = True
         TabOrder = 1
+        TabStop = False
         WantReturns = False
         WordWrap = False
       end
       object RAGameScoresMemo: TMemo
+        Cursor = crArrow
         Left = 176
+        Height = 193
         Top = 8
         Width = 25
-        Height = 161
-        Cursor = crArrow
-        TabStop = False
         Alignment = taRightJustify
         BorderStyle = bsNone
         Color = clBtnFace
         ReadOnly = True
         TabOrder = 2
+        TabStop = False
         WantReturns = False
         WordWrap = False
       end

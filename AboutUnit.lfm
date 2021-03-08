@@ -1,63 +1,68 @@
 object AboutForm: TAboutForm
   Left = 918
+  Height = 113
   Top = 475
+  Width = 165
   BorderStyle = bsDialog
   Caption = 'Tietoja'
   ClientHeight = 113
-  ClientWidth = 153
+  ClientWidth = 165
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
-  Font.Style = []
   OnShow = FormShow
-  PixelsPerInch = 96
+  LCLVersion = '2.0.6.0'
   object ProgramNameLabel: TLabel
     Left = 8
+    Height = 16
     Top = 8
-    Width = 65
-    Height = 13
+    Width = 58
     Caption = 'Reaktiopeli'
     Font.Color = clBlack
     Font.Height = -11
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
+    ParentColor = False
     ParentFont = False
   end
   object ProgramVersionLabel: TLabel
     Left = 8
+    Height = 1
     Top = 24
-    Width = 3
-    Height = 13
+    Width = 1
+    ParentColor = False
   end
   object MadeByLabel: TLabel
     Left = 8
+    Height = 16
     Top = 48
-    Width = 113
-    Height = 13
+    Width = 122
     Caption = 'Tehnyt: Tuomas Suutari'
+    ParentColor = False
   end
   object MailToLabel: TLabel
-    Left = 8
-    Top = 64
-    Width = 136
-    Height = 13
     Cursor = crUpArrow
+    Left = 8
+    Height = 16
+    Top = 64
+    Width = 153
     Caption = '<tuomas.suutari@naantali.fi>'
     DragCursor = crDefault
     Font.Color = clBlue
     Font.Height = -11
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsUnderline]
+    ParentColor = False
     ParentFont = False
     OnClick = MailToLabelClick
   end
   object AboutCloseButton: TButton
-    Left = 28
+    Left = 34
+    Height = 22
     Top = 88
     Width = 96
-    Height = 22
     Caption = 'Sulje'
-    TabOrder = 0
     OnClick = AboutCloseButtonClick
+    TabOrder = 0
   end
 end
