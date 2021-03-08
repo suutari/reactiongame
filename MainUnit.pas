@@ -1,9 +1,11 @@
 unit MainUnit;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   ExtCtrls, StdCtrls, Menus, ComCtrls, NonVisualObjectsUnit;
 
 const
@@ -89,7 +91,7 @@ implementation
 
 uses AboutUnit, Top12Unit, AskNameUnit;
 
-{$R *.DFM}
+{$R *.lfm}
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
@@ -169,8 +171,8 @@ begin
   if NonVisualObjects.GameTimer.Enabled=False
   then begin
     ResetSettings;
-    StartButton.Caption:='Pys‰yt‰';
-    StartMenuItem.Caption:='&Pys‰yt‰ peli';
+    StartButton.Caption:='Pys√§yt√§';
+    StartMenuItem.Caption:='&Pys√§yt√§ peli';
     ScoreBox.Caption:='0';
     NonVisualObjects.LightsTimer.Enabled:=False;
     DarkenButtons;
@@ -310,7 +312,7 @@ begin
     if not AMessageShown
     then begin
       MessageDlg(
-      'Et voi p‰‰st‰ TOP12-listalle, jos kiihtyvyys ei ole "Tavallinen".',
+      'Et voi p√§√§st√§ TOP12-listalle, jos kiihtyvyys ei ole "Tavallinen".',
       mtWarning, [mbOK], 0);
       AMessageShown:=True;
     end;
@@ -331,7 +333,7 @@ begin
     if not SMessageShown
     then begin
       MessageDlg(
-      'Et voi p‰‰st‰ TOP12-listalle, jos l‰htˆnopeus ei ole "Normaali".',
+      'Et voi p√§√§st√§ TOP12-listalle, jos l√§ht√∂nopeus ei ole "Normaali".',
       mtWarning, [mbOK], 0);
       SMessageShown:=True;
     end;

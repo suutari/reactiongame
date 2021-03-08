@@ -1,14 +1,16 @@
 program Reactiongame;
 
+{$MODE Delphi}
+
 uses
-  Forms,
+  Forms, Interfaces,
   MainUnit in 'MainUnit.pas' {MainForm},
   AboutUnit in 'AboutUnit.pas' {AboutForm},
   AskNameUnit in 'AskNameUnit.pas' {AskNameForm},
   Top12Unit in 'Top12Unit.pas' {Top12Form},
   NonVisualObjectsUnit in 'NonVisualObjectsUnit.pas' {NonVisualObjects: TDataModule};
 
-{$R *.RES}
+{$R *.res}
 
 begin
   Application.Initialize;

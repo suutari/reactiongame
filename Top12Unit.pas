@@ -1,9 +1,11 @@
 unit Top12Unit;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls, ComCtrls;
 
 type
@@ -34,7 +36,7 @@ implementation
 
 uses MainUnit;
 
-{$R *.DFM}
+{$R *.lfm}
 
 procedure TTop12Form.HighScoreCloseButtonClick(Sender: TObject);
 begin

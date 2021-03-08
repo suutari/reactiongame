@@ -1,0 +1,46 @@
+Reactiongame.lpi Note: Added defines -dBorland -dVer150 -dDelphi7 -dCompiler6_Up -dPUREPASCAL in custom options
+ Progress: Found all unit files
+Reactiongame.lpr(1,22) Note: Added MODE Delphi syntax modifier after unit name.
+ : 
+ : *** Converting unit files belonging to project/package ***
+MainUnit.pas Note: Changed encoding from ISO-8859-1 to UTF-8
+MainUnit.pas Note: Changed encoding from ISO-8859-1 to UTF-8
+MainUnit.pas Note: Replaced unit "Windows" with "LCLIntf, LCLType, LMessages" in uses section.
+MainUnit.pas(1,15) Note: Added MODE Delphi syntax modifier after unit name.
+AboutUnit.pas Note: Removed unit "ShellApi" from uses section.
+AboutUnit.pas Note: Replaced unit "Windows" with "LCLIntf, LCLType, LMessages" in uses section.
+AboutUnit.pas(1,16) Note: Added MODE Delphi syntax modifier after unit name.
+AboutUnit.pas(53,3) Note: Replaced call ShellExecute(Handle, nil, 'mailto:tuomas.suutari@naantali.fi', '', '',  SW_SHOWNORMAL); with  OpenDocument('mailto:tuomas.suutari@naantali.fi'); { *Converted from ShellExecute* }
+AskNameUnit.pas Note: Changed encoding from ISO-8859-1 to UTF-8
+AskNameUnit.pas Note: Replaced unit "Windows" with "LCLIntf, LCLType, LMessages" in uses section.
+AskNameUnit.pas(1,18) Note: Added MODE Delphi syntax modifier after unit name.
+Top12Unit.pas Note: Changed encoding from ISO-8859-1 to UTF-8
+Top12Unit.pas Note: Replaced unit "Windows" with "LCLIntf, LCLType, LMessages" in uses section.
+Top12Unit.pas(1,16) Note: Added MODE Delphi syntax modifier after unit name.
+NonVisualObjectsUnit.pas Note: Replaced unit "Windows" with "LCLIntf, LCLType, LMessages" in uses section.
+NonVisualObjectsUnit.pas(1,27) Note: Added MODE Delphi syntax modifier after unit name.
+ : 
+ : *** Fixing used units and Repairing form files ***
+MainUnit.pas Note: Removed property "TextHeight".
+MainUnit.pas Note: Removed property "Icon.Data".
+MainUnit.pas Note: Changed Top coord of TPanel from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TPanel from "20" to "18" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TButton from "39" to "37" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TButton from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TButton from "72" to "70" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TButton from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TButton from "104" to "102" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TButton from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TImage from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TImage from "411" to "409" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TImage from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TImage from "276" to "274" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TImage from "7" to "5" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TImage from "141" to "139" inside TPanel.
+MainUnit.pas Note: Changed Top coord of TImage from "8" to "6" inside TPanel.
+MainUnit.pas Note: Changed Left coord of TImage from "7" to "5" inside TPanel.
+AboutUnit.pas Note: Removed property "TextHeight".
+AskNameUnit.pas Note: Removed property "TextHeight".
+Top12Unit.pas Note: Removed property "TextHeight".
+ Progress: Conversion took: 00:00:01
+ : Conversion Ready.

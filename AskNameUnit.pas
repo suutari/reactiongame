@@ -1,9 +1,11 @@
 unit AskNameUnit;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   StdCtrls;
 
 type
@@ -28,7 +30,7 @@ implementation
 
 uses MainUnit;
 
-{$R *.DFM}
+{$R *.lfm}
 
 procedure TAskNameForm.OKButtonClick(Sender: TObject);
 begin

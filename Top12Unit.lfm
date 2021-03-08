@@ -1,0 +1,153 @@
+object Top12Form: TTop12Form
+  Left = 713
+  Top = 554
+  BorderStyle = bsDialog
+  Caption = 'TOP 12'
+  ClientHeight = 249
+  ClientWidth = 233
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OnShow = FormShow
+  PixelsPerInch = 96
+  object HighScoreCloseButton: TButton
+    Left = 72
+    Top = 216
+    Width = 89
+    Height = 32
+    Caption = 'Sulje'
+    TabOrder = 0
+    OnClick = HighScoreCloseButtonClick
+  end
+  object ScorePageControl: TPageControl
+    Left = 8
+    Top = 8
+    Width = 217
+    Height = 201
+    ActivePage = NGameTabSheet
+    TabOrder = 1
+    object NGameTabSheet: TTabSheet
+      Caption = 'Normaali peli'
+      object NGameNamesMemo: TMemo
+        Left = 32
+        Top = 8
+        Width = 137
+        Height = 161
+        Cursor = crArrow
+        TabStop = False
+        BorderStyle = bsNone
+        Color = clBtnFace
+        ReadOnly = True
+        TabOrder = 0
+        WantReturns = False
+        WordWrap = False
+      end
+      object NGameRankMemo: TMemo
+        Left = 8
+        Top = 8
+        Width = 17
+        Height = 161
+        Cursor = crArrow
+        TabStop = False
+        Alignment = taRightJustify
+        BorderStyle = bsNone
+        Color = clBtnFace
+        Lines.Strings = (
+          '1.'
+          '2.'
+          '3.'
+          '4.'
+          '5.'
+          '6.'
+          '7.'
+          '8.'
+          '9.'
+          '10.'
+          '11.'
+          '12.'
+        )
+        ReadOnly = True
+        TabOrder = 1
+        WantReturns = False
+        WordWrap = False
+      end
+      object NGameScoresMemo: TMemo
+        Left = 176
+        Top = 8
+        Width = 25
+        Height = 161
+        Cursor = crArrow
+        TabStop = False
+        Alignment = taRightJustify
+        BorderStyle = bsNone
+        Color = clBtnFace
+        ReadOnly = True
+        TabOrder = 2
+        WantReturns = False
+        WordWrap = False
+      end
+    end
+    object RAGameTabSheet: TTabSheet
+      Caption = 'Sekavasti kiihtyvä peli'
+      object RAGameRankMemo: TMemo
+        Left = 8
+        Top = 8
+        Width = 17
+        Height = 161
+        Cursor = crArrow
+        TabStop = False
+        Alignment = taRightJustify
+        BorderStyle = bsNone
+        Color = clBtnFace
+        Lines.Strings = (
+          '1.'
+          '2.'
+          '3.'
+          '4.'
+          '5.'
+          '6.'
+          '7.'
+          '8.'
+          '9.'
+          '10.'
+          '11.'
+          '12.'
+        )
+        ReadOnly = True
+        TabOrder = 0
+        WantReturns = False
+        WordWrap = False
+      end
+      object RAGameNamesMemo: TMemo
+        Left = 32
+        Top = 8
+        Width = 137
+        Height = 161
+        Cursor = crArrow
+        TabStop = False
+        BorderStyle = bsNone
+        Color = clBtnFace
+        ReadOnly = True
+        TabOrder = 1
+        WantReturns = False
+        WordWrap = False
+      end
+      object RAGameScoresMemo: TMemo
+        Left = 176
+        Top = 8
+        Width = 25
+        Height = 161
+        Cursor = crArrow
+        TabStop = False
+        Alignment = taRightJustify
+        BorderStyle = bsNone
+        Color = clBtnFace
+        ReadOnly = True
+        TabOrder = 2
+        WantReturns = False
+        WordWrap = False
+      end
+    end
+  end
+end

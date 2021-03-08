@@ -1,9 +1,11 @@
 unit NonVisualObjectsUnit;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   ExtCtrls, StdCtrls, ComCtrls;
 
 type
@@ -56,7 +58,7 @@ implementation
 
 uses MainUnit;
 
-{$R *.DFM}
+{$R *.lfm}
 
 constructor TTop12List.Create(FileNamePrefix: String);
 begin

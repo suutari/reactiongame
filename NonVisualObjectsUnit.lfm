@@ -1,0 +1,20 @@
+object NonVisualObjects: TNonVisualObjects
+  Left = 916
+  Top = 136
+  Height = 150
+  Width = 215
+  object GameTimer: TTimer
+    Enabled = False
+    Interval = 800
+    OnTimer = GameTimerTimer
+    Left = 16
+    Top = 8
+  end
+  object LightsTimer: TTimer
+    Enabled = False
+    Interval = 380
+    OnTimer = LightsTimerTimer
+    Left = 80
+    Top = 8
+  end
+end

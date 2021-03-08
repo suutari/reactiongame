@@ -1,0 +1,63 @@
+object AboutForm: TAboutForm
+  Left = 918
+  Top = 475
+  BorderStyle = bsDialog
+  Caption = 'Tietoja'
+  ClientHeight = 113
+  ClientWidth = 153
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OnShow = FormShow
+  PixelsPerInch = 96
+  object ProgramNameLabel: TLabel
+    Left = 8
+    Top = 8
+    Width = 65
+    Height = 13
+    Caption = 'Reaktiopeli'
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ProgramVersionLabel: TLabel
+    Left = 8
+    Top = 24
+    Width = 3
+    Height = 13
+  end
+  object MadeByLabel: TLabel
+    Left = 8
+    Top = 48
+    Width = 113
+    Height = 13
+    Caption = 'Tehnyt: Tuomas Suutari'
+  end
+  object MailToLabel: TLabel
+    Left = 8
+    Top = 64
+    Width = 136
+    Height = 13
+    Cursor = crUpArrow
+    Caption = '<tuomas.suutari@naantali.fi>'
+    DragCursor = crDefault
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsUnderline]
+    ParentFont = False
+    OnClick = MailToLabelClick
+  end
+  object AboutCloseButton: TButton
+    Left = 28
+    Top = 88
+    Width = 96
+    Height = 22
+    Caption = 'Sulje'
+    TabOrder = 0
+    OnClick = AboutCloseButtonClick
+  end
+end

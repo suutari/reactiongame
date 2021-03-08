@@ -1,0 +1,246 @@
+object MainForm: TMainForm
+  Left = 17
+  Top = 650
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Reaktiopeli'
+  ClientHeight = 146
+  ClientWidth = 669
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object ButtonPanel: TPanel
+    Left = 118
+    Top = 0
+    Width = 551
+    Height = 146
+    BevelOuter = bvLowered
+    BevelWidth = 2
+    Color = clBlack
+    TabOrder = 0
+    object RedButton: TImage
+      Left = 5
+      Top = 6
+      Width = 128
+      Height = 127
+      OnClick = ColorButtonClick
+    end
+    object GreenButton: TImage
+      Tag = 1
+      Left = 139
+      Top = 5
+      Width = 128
+      Height = 128
+      OnClick = ColorButtonClick
+    end
+    object BlueButton: TImage
+      Tag = 2
+      Left = 274
+      Top = 5
+      Width = 128
+      Height = 128
+      OnClick = ColorButtonClick
+    end
+    object YellowButton: TImage
+      Tag = 3
+      Left = 409
+      Top = 5
+      Width = 128
+      Height = 128
+      OnClick = ColorButtonClick
+    end
+  end
+  object ActionPanel: TPanel
+    Left = 0
+    Top = 0
+    Width = 117
+    Height = 146
+    BevelOuter = bvNone
+    BevelWidth = 2
+    TabOrder = 1
+    object QuitButton: TButton
+      Left = 5
+      Top = 102
+      Width = 104
+      Height = 32
+      Hint = 'Poistu pelistä'
+      Caption = 'Poistu'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      OnClick = QuitButtonClick
+      OnKeyPress = KeyboardKeyPress
+    end
+    object Top12Button: TButton
+      Left = 5
+      Top = 70
+      Width = 104
+      Height = 32
+      Hint = 'Näytä parhaat 12 pelaajaa'
+      Caption = 'TOP 12'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnClick = Top12ButtonClick
+      OnKeyPress = KeyboardKeyPress
+    end
+    object StartButton: TButton
+      Left = 5
+      Top = 37
+      Width = 104
+      Height = 32
+      Hint = 'Aloita peli'
+      Caption = 'Aloita!'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnClick = StartButtonClick
+      OnKeyPress = KeyboardKeyPress
+    end
+    object ScoreBox: TPanel
+      Left = 18
+      Top = 5
+      Width = 78
+      Height = 26
+      Alignment = taRightJustify
+      BevelOuter = bvLowered
+      BevelWidth = 2
+      Color = clBlack
+      Font.Color = clAqua
+      Font.Height = -21
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  object MainMenu: TMainMenu
+    Left = 128
+    Top = 8
+    object ActionsMenuItem: TMenuItem
+      Caption = '&Toiminnot'
+      ShortCut = 0
+      object StartMenuItem: TMenuItem
+        Caption = '&Aloita peli!'
+        ShortCut = 16449
+        OnClick = StartButtonClick
+      end
+      object Top12MenuItem: TMenuItem
+        Caption = 'Näytä &TOP 12'
+        ShortCut = 16456
+        OnClick = Top12ButtonClick
+      end
+      object QuitMenuItem: TMenuItem
+        Caption = '&Poistu'
+        ShortCut = 16472
+        OnClick = QuitButtonClick
+      end
+    end
+    object OptionsMenuItem: TMenuItem
+      Caption = '&Valinnat'
+      ShortCut = 0
+      object GameTypeMenuItem: TMenuItem
+        Caption = '&Pelin tyyppi'
+        ShortCut = 0
+        object NGameMenuItem: TMenuItem
+          Caption = '&Normaali'
+          Checked = True
+          GroupIndex = 1
+          RadioItem = True
+          ShortCut = 16462
+          OnClick = NGameMenuItemClick
+        end
+        object RAGameMenuItem: TMenuItem
+          Caption = '&Sekavasti kiihtyvä'
+          GroupIndex = 1
+          RadioItem = True
+          ShortCut = 16466
+          OnClick = RAGameMenuItemClick
+        end
+      end
+      object StartingSpeedMenuItem: TMenuItem
+        Caption = '&Lähtönopeus'
+        ShortCut = 0
+        object SlowSpeedMenuItem: TMenuItem
+          Caption = '&Hidas'
+          GroupIndex = 3
+          RadioItem = True
+          ShortCut = 0
+          OnClick = SpeedMenuItemClick
+        end
+        object NormalSpeedMenuItem: TMenuItem
+          Tag = 1
+          Caption = '&Normaali'
+          Checked = True
+          GroupIndex = 3
+          RadioItem = True
+          ShortCut = 0
+          OnClick = SpeedMenuItemClick
+        end
+        object FastSpeedMenuItem: TMenuItem
+          Tag = 2
+          Caption = 'N&opea'
+          GroupIndex = 3
+          RadioItem = True
+          ShortCut = 0
+          OnClick = SpeedMenuItemClick
+        end
+      end
+      object AccelMenuItem: TMenuItem
+        Caption = '&Kiihtyvyys'
+        ShortCut = 0
+        object EasyAccelMenuItem: TMenuItem
+          Caption = '&Nakki'
+          GroupIndex = 2
+          RadioItem = True
+          ShortCut = 0
+          OnClick = AccelMenuItemClick
+        end
+        object NormalAccelMenuItem: TMenuItem
+          Tag = 1
+          Caption = '&Tavallinen'
+          Checked = True
+          GroupIndex = 2
+          RadioItem = True
+          ShortCut = 0
+          OnClick = AccelMenuItemClick
+        end
+        object FastAccelMenuItem: TMenuItem
+          Tag = 2
+          Caption = 'N&opea'
+          GroupIndex = 2
+          RadioItem = True
+          ShortCut = 0
+          OnClick = AccelMenuItemClick
+        end
+        object CrazyAccelMenuItem: TMenuItem
+          Tag = 3
+          Caption = '&Hullu'
+          GroupIndex = 2
+          RadioItem = True
+          ShortCut = 0
+          OnClick = AccelMenuItemClick
+        end
+        object ImpossibleAccelMenuItem: TMenuItem
+          Tag = 4
+          Caption = '&Mahdoton'
+          GroupIndex = 2
+          RadioItem = True
+          ShortCut = 0
+          OnClick = AccelMenuItemClick
+        end
+      end
+    end
+    object AboutMenuItem: TMenuItem
+      Caption = 'T&ietoja'
+      Hint = 'Tietoja ohjelmasta'
+      ShortCut = 112
+      OnClick = AboutMenuItemClick
+    end
+  end
+end

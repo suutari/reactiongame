@@ -1,10 +1,12 @@
 unit AboutUnit;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls, ShellApi;
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls;
 
 type
   TAboutForm = class(TForm)
@@ -30,7 +32,7 @@ implementation
 
 uses MainUnit;
 
-{$R *.DFM}
+{$R *.lfm}
 
 procedure TAboutForm.AboutCloseButtonClick(Sender: TObject);
 begin
@@ -50,8 +52,7 @@ end;
 
 procedure TAboutForm.MailToLabelClick(Sender: TObject);
 begin
-  ShellExecute(Handle, nil, 'mailto:tuomas.suutari@naantali.fi', '', '',
-  SW_SHOWNORMAL);
+   OpenDocument('mailto:tuomas.suutari@naantali.fi'); { *Converted from ShellExecute* }
 end;
 
 end.
