@@ -5,8 +5,8 @@ unit AskNameUnit;
 interface
 
 uses
-  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls;
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls;
 
 type
   TAskNameForm = class(TForm)

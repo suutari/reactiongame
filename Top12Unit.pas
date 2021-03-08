@@ -5,8 +5,8 @@ unit Top12Unit;
 interface
 
 uses
-  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls, ComCtrls;
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Classes, Graphics, Controls,
+  Forms, Dialogs, StdCtrls, ComCtrls;
 
 type
   TTop12Form = class(TForm)

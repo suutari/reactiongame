@@ -8,7 +8,8 @@ uses
   AboutUnit in 'AboutUnit.pas' {AboutForm},
   AskNameUnit in 'AskNameUnit.pas' {AskNameForm},
   Top12Unit in 'Top12Unit.pas' {Top12Form},
-  NonVisualObjectsUnit in 'NonVisualObjectsUnit.pas' {NonVisualObjects: TDataModule};
+  NonVisualObjectsUnit in 'NonVisualObjectsUnit.pas'
+                          {NonVisualObjects: TDataModule};
 
 {$R *.res}
 
