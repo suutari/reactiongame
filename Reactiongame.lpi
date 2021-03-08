@@ -14,6 +14,16 @@
       <Title Value="Reactiongame"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
+      <Resources Count="8">
+        <Resource_0 FileName="images/BlueButton.bmp" Type="BITMAP" ResourceName="BLUEBUTTON"/>
+        <Resource_1 FileName="images/DarkBlueButton.bmp" Type="BITMAP" ResourceName="DARKBLUEBUTTON"/>
+        <Resource_2 FileName="images/DarkGreenButton.bmp" Type="BITMAP" ResourceName="DARKGREENBUTTON"/>
+        <Resource_3 FileName="images/DarkRedButton.bmp" Type="BITMAP" ResourceName="DARKREDBUTTON"/>
+        <Resource_4 FileName="images/DarkYellowButton.bmp" Type="BITMAP" ResourceName="DARKYELLOWBUTTON"/>
+        <Resource_5 FileName="images/GreenButton.bmp" Type="BITMAP" ResourceName="GREENBUTTON"/>
+        <Resource_6 FileName="images/RedButton.bmp" Type="BITMAP" ResourceName="REDBUTTON"/>
+        <Resource_7 FileName="images/YellowButton.bmp" Type="BITMAP" ResourceName="YELLOWBUTTON"/>
+      </Resources>
     </General>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>

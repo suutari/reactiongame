@@ -48,7 +48,7 @@ type
     ScoreBox: TPanel;
 
     procedure FormCreate(Sender: TObject);
-    function NewColorButton(const FileName: String): TBitmap;
+    function NewColorButton(const ResName: String): TBitmap;
     procedure StartButtonClick(Sender: TObject);
     procedure Top12ButtonClick(Sender: TObject);
     procedure QuitButtonClick(Sender: TObject);
@@ -109,15 +109,15 @@ begin
   ScoresEnabled:=True;
   RandomTimerEnabled:=False;
 
-  RedButtonImage:=NewColorButton('images\RedButton.bmp');
-  GreenButtonImage:=NewColorButton('images\GreenButton.bmp');
-  BlueButtonImage:=NewColorButton('images\BlueButton.bmp');
-  YellowButtonImage:=NewColorButton('images\YellowButton.bmp');
+  RedButtonImage:=NewColorButton('REDBUTTON');
+  GreenButtonImage:=NewColorButton('GREENBUTTON');
+  BlueButtonImage:=NewColorButton('BLUEBUTTON');
+  YellowButtonImage:=NewColorButton('YELLOWBUTTON');
 
-  DarkRedButtonImage:=NewColorButton('images\DarkRedButton.bmp');
-  DarkGreenButtonImage:=NewColorButton('images\DarkGreenButton.bmp');
-  DarkBlueButtonImage:=NewColorButton('images\DarkBlueButton.bmp');
-  DarkYellowButtonImage:=NewColorButton('images\DarkYellowButton.bmp');
+  DarkRedButtonImage:=NewColorButton('DARKREDBUTTON');
+  DarkGreenButtonImage:=NewColorButton('DARKGREENBUTTON');
+  DarkBlueButtonImage:=NewColorButton('DARKBLUEBUTTON');
+  DarkYellowButtonImage:=NewColorButton('DARKYELLOWBUTTON');
 
   ResetSettings;
 end;
@@ -127,7 +127,7 @@ begin
   Close;
 end;
 
-function TMainForm.NewColorButton(const FileName: String): TBitmap;
+function TMainForm.NewColorButton(const ResName: String): TBitmap;
 var ImageObject: TBitmap;
 begin
   ImageObject:=TBitmap.Create;
@@ -136,7 +136,7 @@ begin
     Height:=128;
     Width:=128;
   end;
-  ImageObject.LoadFromFile(FileName);
+  ImageObject.LoadFromResourceName(HInstance, ResName);
   Result:=ImageObject;
 end;
 
