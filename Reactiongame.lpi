@@ -14,6 +14,7 @@
       <Title Value="Reactiongame"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
+      <Icon Value="0"/>
       <Resources Count="8">
         <Resource_0 FileName="images/BlueButton.bmp" Type="BITMAP" ResourceName="BLUEBUTTON"/>
         <Resource_1 FileName="images/DarkBlueButton.bmp" Type="BITMAP" ResourceName="DARKBLUEBUTTON"/>
