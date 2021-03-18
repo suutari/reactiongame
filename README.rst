@@ -6,6 +6,8 @@ random order and you should push them in the same order to score.
 Requires `Lazarus IDE <https://www.lazarus-ide.org/>`_ to compile the
 Pascal source code to executable program.
 
+.. image:: screenshot.png
+
 History
 -------
 
