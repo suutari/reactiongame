@@ -9,7 +9,7 @@ uses
   ExtCtrls, StdCtrls, Menus, ComCtrls, NonVisualObjectsUnit;
 
 const
-  cProgVersion: String = 'Versio 1.0.8 (27.3.2001)';
+  cProgVersion: String = 'Versio 2.0.0 (18.3.2021)';
   opnAccel: array[0..4] of Integer = (0, 2, 4, 6, 9);
   opnSpeed: array[0..2] of Integer = (2000, 800, 520);
 
